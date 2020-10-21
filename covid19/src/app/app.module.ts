@@ -8,6 +8,7 @@ import { HomeComponent } from './components/home/home.component';
 import { CountriesComponent } from './components/countries/countries.component';
 import{ NgxCsvParserModule } from 'ngx-csv-parser';
 import { HttpClientModule} from '@angular/common/http';
+import { Ng2GoogleChartsModule, GoogleChartsSettings } from 'ng2-google-charts';
 import { DashboardCardComponent } from './components/dashboard-card/dashboard-card.component';
 @NgModule({
   declarations: [
@@ -21,7 +22,9 @@ import { DashboardCardComponent } from './components/dashboard-card/dashboard-ca
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgxCsvParserModule
+    NgxCsvParserModule,
+    Ng2GoogleChartsModule
+    
 
   ],
   providers: [],

@@ -10,7 +10,7 @@ import { GlobalDataSummary } from '../models/gloable-data';
 })
 export class ServicesService {
   //private globalDataUrl ="https://jsonplaceholder.typicode.com/todos";https://raw.githubusercontent.com/amankmanish/Covid-19-Data/main/Data/csse_covid_19_data/csse_covid_19_daily_reports/04-01-2020.csv
-  private globalDataUrl ="https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/04-03-2020.csv";
+  private globalDataUrl ="https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/05-08-2020.csv";
   //  "https://raw.githubusercontent.com/amankmanish/Covid-19-Data/main/Data/csse_covid_19_data/csse_covid_19_daily_reports/04-03-2020.csv";
   constructor(private Http : HttpClient ) { }
   getGolableData () : Observable <any>{
