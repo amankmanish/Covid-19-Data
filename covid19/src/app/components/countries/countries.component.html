@@ -17,4 +17,39 @@
         </div>
     </div>
     <app-dashboard-card [totalConfirmed]='totalConfirmed' [totalActive]='totalActive' [totalDeaths]='totalDeaths' [totalRecovered]='totalRecovered'></app-dashboard-card>
+    <div class="row">
+        <div class="col">
+            <google-chart [data]="lineChart"></google-chart>
+        </div>
+        <div class="col">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            Serial Number: -
+                        </th>
+                        <th>
+                            Date :-
+                        </th>
+                        <th>
+                            Cases : -
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor='let cs of selectedCountryData; index as i'>
+                        <td>{{i+i}}</td>
+                        <td>{{cs.date | date}}</td>
+                        <td>{{cs.cases}}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+
+
+
+
+    </div>
 </div>
